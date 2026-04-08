@@ -12,6 +12,8 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
+  base: '/Joshua.com',
+
   plugins: [react(), mode === 'development' && componentTagger()].filter(
     Boolean,
   ),
@@ -28,5 +30,4 @@ export default defineConfig(({ mode }) => ({
       '@tanstack/query-core',
     ],
   },
-  base: '/Joshua.com',
 }));
